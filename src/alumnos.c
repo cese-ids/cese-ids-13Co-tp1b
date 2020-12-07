@@ -39,7 +39,7 @@ static const struct alumno_s MARTIN_MELLOTEGGIA = {
 
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
-	&MARTIN_MELLOTEGGIA,
+    &MARTIN_MELLOTEGGIA,
 };
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));

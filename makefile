@@ -10,13 +10,14 @@ OBJ_FILES = $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRC_FILES))
 all: build_folders $(OBJ_FILES)
 	@echo Building aplication
 	@gcc $(OBJ_FILES) -o $(BIN_DIR)/app.out
+	#@doxygen
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@echo Compiling source file $(notdir $(basename $<))
 	@gcc -c $< -I$(INC_DIR) -o $@
 
 docs:	$(DOC_DIR)
-		@doxygen
+		@doxygen |
 ###############################################################################
 # Creation of output folders
 build_folders: $(BIN_DIR) $(LIB_DIR) $(OBJ_DIR) $(DOC_DIR) $(DPN_DIR) $(RST_DIR)

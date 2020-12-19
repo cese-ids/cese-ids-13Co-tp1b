@@ -1,0 +1,57 @@
+\hypertarget{alumnos_8c}{}\section{Referencia del Archivo src/alumnos.c}
+\label{alumnos_8c}\index{src/alumnos.\+c@{src/alumnos.\+c}}
+{\ttfamily \#include \char`\"{}alumnos.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Dependencia gráfica adjunta para alumnos.\+c\+:
+% FIG 0
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{alumnos_8c_a94d19b92fc92e35f30662e321356326a}{Serializar\+Alumno} (char $\ast$cadena, size\+\_\+t espacio, const alumno\+\_\+t alumno)
+\item 
+bool \hyperlink{alumnos_8c_aef15ca72144639b5e2542aed76f8eb09}{Serializar\+Alumnos} (char $\ast$cadena, size\+\_\+t espacio)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const alumno\+\_\+t \hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS} \mbox{[}$\,$\mbox{]}
+\item 
+const int \hyperlink{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS} = (sizeof(\hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS}) / sizeof(alumno\+\_\+t))
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\index{alumnos.\+c@{alumnos.\+c}!Serializar\+Alumno@{Serializar\+Alumno}}
+\index{Serializar\+Alumno@{Serializar\+Alumno}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection[{\texorpdfstring{Serializar\+Alumno(char $\ast$cadena, size\+\_\+t espacio, const alumno\+\_\+t alumno)}{SerializarAlumno(char *cadena, size_t espacio, const alumno_t alumno)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializar\+Alumno (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{cadena, }
+\item[{size\+\_\+t}]{espacio, }
+\item[{const alumno\+\_\+t}]{alumno}
+\end{DoxyParamCaption}
+)}\hypertarget{alumnos_8c_a94d19b92fc92e35f30662e321356326a}{}\label{alumnos_8c_a94d19b92fc92e35f30662e321356326a}
+\index{alumnos.\+c@{alumnos.\+c}!Serializar\+Alumnos@{Serializar\+Alumnos}}
+\index{Serializar\+Alumnos@{Serializar\+Alumnos}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection[{\texorpdfstring{Serializar\+Alumnos(char $\ast$cadena, size\+\_\+t espacio)}{SerializarAlumnos(char *cadena, size_t espacio)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializar\+Alumnos (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{cadena, }
+\item[{size\+\_\+t}]{espacio}
+\end{DoxyParamCaption}
+)}\hypertarget{alumnos_8c_aef15ca72144639b5e2542aed76f8eb09}{}\label{alumnos_8c_aef15ca72144639b5e2542aed76f8eb09}
+
+
+\subsection{Documentación de las variables}
+\index{alumnos.\+c@{alumnos.\+c}!A\+L\+U\+M\+N\+OS@{A\+L\+U\+M\+N\+OS}}
+\index{A\+L\+U\+M\+N\+OS@{A\+L\+U\+M\+N\+OS}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection[{\texorpdfstring{A\+L\+U\+M\+N\+OS}{ALUMNOS}}]{\setlength{\rightskip}{0pt plus 5cm}const alumno\+\_\+t A\+L\+U\+M\+N\+OS\mbox{[}$\,$\mbox{]}}\hypertarget{alumnos_8c_ac069805169418a8efebf22c025e195c5}{}\label{alumnos_8c_ac069805169418a8efebf22c025e195c5}
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}
+= \{
+    &ESTEBAN\_VOLENTINI,
+    &PABLO\_NARVAEZ,
+\}
+\end{DoxyCode}
+\index{alumnos.\+c@{alumnos.\+c}!C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS@{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS}}
+\index{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS@{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS}!alumnos.\+c@{alumnos.\+c}}
+\subsubsection[{\texorpdfstring{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS}{CANTIDAD_ALUMNOS}}]{\setlength{\rightskip}{0pt plus 5cm}const int C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS = (sizeof({\bf A\+L\+U\+M\+N\+OS}) / sizeof(alumno\+\_\+t))}\hypertarget{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}{}\label{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}

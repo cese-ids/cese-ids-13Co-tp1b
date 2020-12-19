@@ -1,0 +1,22 @@
+
+\begin{DoxyEnumerate}
+\item Crear un repositorio personal realizando un {\itshape fork} del repositorio de la catedra, clonar el repositorio personal en su computadora y desplegar la rama {\itshape master}.
+\item Editar la definicion de la constante A\+L\+U\+M\+N\+OS siguiendo el siguiente ejemplo
+
+```c static const struct alumno\+\_\+s E\+S\+T\+E\+B\+A\+N\+\_\+\+V\+O\+L\+E\+N\+T\+I\+NI = \{ .apellidos = \char`\"{}\+V\+O\+L\+E\+N\+T\+I\+N\+I\char`\"{}, .nombres = \char`\"{}\+Esteban Daniel\char`\"{}, .documento = \char`\"{}23.\+517.\+968\char`\"{}, \};
+
+const alumno\+\_\+t A\+L\+U\+M\+N\+OS\mbox{[}\mbox{]} = \{ \&E\+S\+T\+E\+B\+A\+N\+\_\+\+V\+O\+L\+E\+N\+T\+I\+NI, \}; ```
+\item Compilar el programa, ejecutarlo y revisar que el mismo funcione correctamente.
+\item Confirmar los cambios, subirlos al servidor y pedir un {\itshape pull request} poniendo con el texto $\ast$$\ast$\char`\"{}\+Se agregan los datos del alumno A\+P\+E\+L\+L\+I\+D\+O, Nombre\char`\"{}$\ast$$\ast$ en la descipción del mismo.
+\item Revisar que el pull request esté en condiciones de ser mezclado y corregir los conflictos si fuera necesario.
+\end{DoxyEnumerate}
+
+\subsection*{Tercera Parte}
+
+
+\begin{DoxyEnumerate}
+\item Crear una rama {\itshape develop} en su repositorio personal y desplegarla.
+\item Documentar los archivos {\ttfamily alumnos.\+h} y {\ttfamily alumnos.\+c} siguiendo los criterios proporcionados en la clase practica.
+\item Modificar el archivo {\ttfamily makefile} para agregar una regla que genere la documentacion con el comando {\ttfamily make doc}
+\item Confirmar los cambios y subirlos al servidor. 
+\end{DoxyEnumerate}

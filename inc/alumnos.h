@@ -29,6 +29,9 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+/**
+ * @brief Estructura con los datos del alumno
+*/
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
@@ -39,6 +42,13 @@ typedef struct alumno_s {
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+
+/**
+ * @brief Función serializar alumno
+ * @param cadena 
+ * @param espacio
+ * @return True o False
+ */
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
 bool SerializarAlumnos(char * cadena, size_t espacio);

@@ -1,11 +1,9 @@
-/*=====[Module Name]===========================================================
- * Copyright 2019 Esteban Daniel VOLENTINI <evolentini@gmail.com>
- * All rights reserved.
- * License: BSD-3-Clause <https://opensource.org/licenses/BSD-3-Clause>)
- *
- * Version: 0.1.0
- * Creation Date: 2019/03/01
- */
+/**
+ * @file alumnos.c
+ * @brief Módulo que implementa las funciones...
+ * @author --------
+ * @date 19/12/2020
+*/
  
 /*=====[Inclusion of own header]=============================================*/
 
@@ -31,8 +29,16 @@ static const struct alumno_s ESTEBAN_VOLENTINI = {
     .documento = "23.517.968",
 };
 
+
+static const struct alumno_s FERNANDO_TAJES = {
+    .apellidos = "TAJES",
+    .nombres = "Fernando",
+    .documento = "3.864.221-4",
+};
+
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
+    &FERNANDO_TAJES,
 };
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
@@ -45,6 +51,9 @@ const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Implementations of interrupt functions]==============================*/
 
+/**
+ * @brief Función que serializa al alumno
+*/
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
     int resultado;
     const char FORMATO[] = "{"
@@ -59,6 +68,9 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
     return (resultado >= 0);
 }
 
+/**
+ * @brief Función que serializa a los alumnos
+*/
 bool SerializarAlumnos(char * cadena, size_t espacio) {
     static const int  cantidad = sizeof(ALUMNOS) / sizeof(alumno_t);
     int posicion = snprintf(cadena, espacio, "[\r\n  ");
